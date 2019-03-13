@@ -31,11 +31,13 @@ public class LoginController {
         try {
             usuario = loginService.findUsuario(usuario.getUserName(), usuario.getPassword());
             if (usuario == null) {
-                response.setMessage("correcto");
-            } else {
                 response.setMessage("error");
+                response.setSuccess(Boolean.FALSE);
+            } else {
+                response.setMessage("correcto");
             }
         } catch (Exception e) {
+            e.printStackTrace();
             response.setSuccess(Boolean.FALSE);
         }
         return response;

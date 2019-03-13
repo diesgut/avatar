@@ -19,8 +19,8 @@
 
                 <!-- Login Form -->
                 <form >
-                    <input type="text"  id="login" class="fadeIn second" v-model="usuario.userName" autocomplete="off"/>
-                    <input type="text" id="password" class="fadeIn third" v-model="usuario.password" autocomplete="off"/>
+                    <input type="text"  id="login" class="fadeIn second" v-model="usuario.userName" autocomplete="off" placeholder="Usuario"/>
+                    <input type="text" id="password" class="fadeIn third" v-model="usuario.password" autocomplete="off" placeholder="Contraseña"/>
 
                     <a class="btn btn-default"   v-on:click.prevent="logear"  >Entrar</a>
                 </form>
