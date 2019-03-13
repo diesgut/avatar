@@ -11,8 +11,9 @@ new Vue({
                 let $vue=this;
                $.ajax({
                 url: '/login',
-                dataType: 'json',
-                type: 'POST',
+               dataType: "json",
+                            contentType: "application/json",
+                            type: 'POST',
                 async: true,
                 data:  JSON.stringify($vue.usuario),
                 success(response) {
