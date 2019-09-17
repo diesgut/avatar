@@ -21,8 +21,8 @@ public class UsuarioServiceImp implements UsuarioService {
     @Transactional
     public void createUsers() {
         Usuario usuario1 = new Usuario();
-        usuario1.setPassword("avatar");
-        usuario1.setUserName("avatar");
+        usuario1.setPassword("diesgut");
+        usuario1.setUserName("diesgut");
         usuario1.setPersona(null);
 
         Usuario usuarioFound = usuarioRepository.findByUserName(usuario1.getUserName());

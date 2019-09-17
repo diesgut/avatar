@@ -1,20 +1,29 @@
-<th:block xmlns:th="http://www.thymeleaf.org" 
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorator="layouts/layout" layout:fragment="content">
+<html xmlns:th="http://www.thymeleaf.org" 
+          xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+          layout:decorator="layouts/layout" >
 
     <!-- Page Content -->
-    <div class="container" id="homePage">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Home</h2>
-                <div class="well">
-                	Bienvenido
+    <div layout:fragment="content"> 
+        <div class="container" id="homePage">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Home</h2>
+                    <div class="well">
+                        Bienvenido
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- /.container -->
+    <div layout:fragment="js">
+        <script th:inline="javascript">
 
-    
-</th:block>
+//            var alumnoCursoJson = [[${alumnoCurso.toString()
+//            }
+//            ]];
+        </script>
+<!--        <script th:src="@{/app/academico/cursodirigido/cursodirigido.js}" charset="utf-8"></script>-->
+    </div>
+</html>
 

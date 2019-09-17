@@ -1,7 +1,7 @@
 new Vue({
     el: '#formContent',
     data: {
-        usuario:{userName:"avatar",password:"avatar"}
+        usuario:{userName:"diesgut",password:"diesgut"}
     },
     mounted() {
        
